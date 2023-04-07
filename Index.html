@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <input id="x1" type="text" placeholder="First number"/>
+    <br/>
+    <input id="x2" type="text" placeholder="Second number"/>
+    <br/>
+     <input id="y1" type="text" placeholder="First number"/>
+    <br/>
+    <input id="y2" type="text" placeholder="Second number"/>
+    <br/>
+          <button type="button" onclick="calculateMidpoint()">Calculate Midpoint</button>
+    </body>
+    <script>
+    function calculateMidpoint() {
+      let a = parseFloat(document.getElementById("x1").value);
+      let b = parseFloat(document.getElementById("x2").value);
+      let c = (a + b) / 2;
+      let d = parseFloat(document.getElementById("y1").value);
+      let e = parseFloat(document.getElementById("y2").value);
+      let f = (d + e) / 2;
+    document.write("x = ", + c+"<br>");
+    document.write("y = ", + f)
+    }
+    </script>
+    </html>
